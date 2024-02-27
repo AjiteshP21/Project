@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Simple Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial;
+        }
+        body {
+            background-color: #7CC6FE;
+            background-image: url('../pictures/mars-plex-n_wrdzfero0-unsplash.jpg');
+            background-size: cover;
+            background-position: Center;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: #08090A;
+            color: #F4FAFF;
+            padding: 25px;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            padding: 10px;
+            color: #F4FAFF;
+            cursor: pointer;
+            background: #8789C0;
+            z-index: 1000;
+            font-weight:bold;
+        }
+
+        .nav-list {
+            font-size:20px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            list-style: none;
+        }
+
+            .nav-list li {
+                padding: 5px;
+            }
+
+                .nav-list li a {
+                    text-decoration: none;
+                    color: white;
+                    transition: color 0.3s ease;
+                }
+
+                    .nav-list li a:hover {
+                        color: blue;
+                    }
+
+        .first-section, .second-section, .third-section, .forth-section {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding: 50px 50px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1, .box2, .box3, .box4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 95%;
+            margin: auto;
+            height: 80%;
+        }
+        .text-big {
+            font-weight: bold;
+            font-size: 35px;
+        }
+        .text-small {
+            font-size: 18px;
+        }
+        footer {
+            background-color: #08090A;
+            color: #F4FAFF;
+            padding: 5px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simple Webpage</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Css</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">Bootstrap</a></li>
+        </ul>
+    </nav>
+   
+    <section class="first-section">
+        <div class="box1">
+            <div class="first-half">
+                <h1 class="text-big" id="html">HTML</h1>
+                <p class="text-small">
+                    HTML (Hypertext Markup Language) is the standard language used to create and structure web pages. 
+                    It consists of a series of elements or tags that define the content and layout of a webpage. 
+                    HTML elements represent different parts of a document, such as headings, paragraphs, images, links, 
+                    and forms. By using HTML tags, developers can organize and format content, create hyperlinks, embed 
+                    media, and build interactive elements. Browsers interpret HTML code to render web pages for users
+                    to view and interact with on the internet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="second-section">
+        <div class="box2">
+            <div class="second-half">
+                <h1 class="text-big" id="css">Css</h1>
+                <p class="text-small">
+                    CSS (Cascading Style Sheets) is a styling language used to control the presentation of HTML elements
+                    on a webpage. It allows you to define the layout, colors, typography, and other visual aspects of
+                    your web pages. CSS works by associating style rules with HTML elements, specifying how they should
+                    be displayed in the browser. It helps to separate the structure and content of a webpage from its
+                    presentation, making it easier to maintain and style websites consistently across different devices
+                    and screen sizes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="third-section">
+        <div class="box3">
+            <div class="third-half">
+                <h1 class="text-big" id="javascript">JavaScript</h1>
+                <p class="text-small">
+                    JavaScript is a versatile programming language used primarily for adding interactivity and dynamic
+                    features to web pages. It runs on the client-side within web browsers, enabling developers to respond
+                    to user actions, manipulate content, and communicate with servers. JavaScript is essential for
+                    creating modern, interactive web applications and is supported by a vast ecosystem of libraries and
+                    frameworks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="forth-section">
+        <div class="box4">
+            <div class="forth-half">
+                <h1 class="text-big" id="bootstrap">Bootstrap</h1>
+                <p class="text-small">
+                    Bootstrap is a popular front-end framework used for building responsive and mobile-first websites 
+                    and web applications. It provides a collection of pre-designed HTML, CSS, and JavaScript components, 
+                    including grids, navigation bars, forms, buttons, and more, that can be easily customized and 
+                    integrated into projects. Bootstrap simplifies the process of creating modern and visually appealing 
+                    layouts by offering a consistent and flexible design system, along with built-in responsiveness for 
+                    optimal viewing on various devices and screen sizes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;2024 Simple Webpage</p>
+    </footer>
+</body>
+</html>
